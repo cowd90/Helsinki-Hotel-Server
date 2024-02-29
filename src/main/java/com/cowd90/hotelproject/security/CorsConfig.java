@@ -23,7 +23,6 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("https://helsinki-hotel-server-production-214e.up.railway.app/");
-        config.addAllowedOrigin(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN);
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,

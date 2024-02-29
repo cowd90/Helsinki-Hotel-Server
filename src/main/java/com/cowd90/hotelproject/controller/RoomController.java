@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "https://helsinki-hotel-server-production-214e.up.railway.app/")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/rooms")
