@@ -1,6 +1,5 @@
 package com.cowd90.hotelproject.security;
 
-import org.springframework.aot.generate.AccessControl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
@@ -27,8 +26,7 @@ public class CorsConfig {
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,
-                HttpHeaders.ACCEPT,
-                HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN));
+                HttpHeaders.ACCEPT));
         config.setAllowedMethods(Arrays.asList(
                 HttpMethod.GET.name(),
                 HttpMethod.POST.name(),
